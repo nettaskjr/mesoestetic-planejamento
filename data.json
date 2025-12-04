@@ -1,0 +1,148 @@
+{
+  "header": {
+    "title": "mesoestetic Brasil",
+    "subtitle": "Planejamento Estratégico do Setor de Treinamento 2026"
+  },
+  "diagnostico": {
+    "missao": "Planejar, estruturar e entregar programas contínuos de formação científica e comercial para garantir padronização e excelência.",
+    "visao": "Consolidar a mesoestetic Brasil como a maior referência nacional em formação científica e comercial em estética avançada.",
+    "valores": "Acelerar pessoas para transformar resultados. Criar aprendizados que elevam profissionais e potencializam carreiras.",
+    "swot": {
+      "forcas": [
+        "POPs sólidos (T-001, T-002, T-003) e aprovados.",
+        "Plataforma Academy estruturada e rastreável.",
+        "Estrutura formal de Speakers e Multiplicadores."
+      ],
+      "fraquezas": [
+        "Treinamento pouco ligado a metas comerciais específicas (venda/ticket).",
+        "Falta de protocolos definidos e associações de mesclas.",
+        "Falta de visão consolidada anual por estação."
+      ],
+      "oportunidades": [
+        "Crescimento da demanda por formação científica estruturada.",
+        "Escalar workshops em clínicas para impactar vendas.",
+        "Uso integrado de Academy, Zoom e CRM."
+      ],
+      "ameacas": [
+        "Concorrentes com programas agressivos.",
+        "Carga operacional alta reduzindo tempo para treino.",
+        "Risco de despadronização do discurso técnico."
+      ]
+    }
+  },
+  "objetivos": [
+    {
+      "valor": "50%",
+      "titulo": "Produtividade Comercial",
+      "descricao": "Aumentar a produtividade da equipe comercial através de treinamentos estruturados por produto e estação.",
+      "cor": "red"
+    },
+    {
+      "valor": "100%",
+      "titulo": "Cobertura de Lançamentos",
+      "descricao": "Garantir equipe treinada e certificada em todos os lançamentos antes das campanhas.",
+      "cor": "yellow"
+    },
+    {
+      "valor": "95%",
+      "titulo": "Execução do PAT",
+      "descricao": "Implementar calendário anual conectado às estações com execução ≥ 95%.",
+      "cor": "green"
+    },
+    {
+      "valor": "30 dias",
+      "titulo": "Onboarding Ágil",
+      "descricao": "Integração completa de novos colaboradores com 80% de aproveitamento técnico e 90% de satisfação.",
+      "cor": "blue"
+    }
+  ],
+  "gantt": "gantt\n    title Planejamento Estratégico de Treinamento mesoestetic 2026\n    dateFormat  YYYY-MM-DD\n    axisFormat  %b\n    tickInterval 1month\n\n    section 1. VERÃO\n    Treinamento Cosmelan/Dermamelan      :active, a1, 2026-01-05, 2026-01-20\n    Campanha Janeiro Branco              :crit, a2, 2026-01-10, 2026-01-31\n    Campanha Pós-Sol / Carnaval          :a3, 2026-02-01, 2026-02-28\n    Workshop Acne Pós-Verão (Blemiderm)  :a4, 2026-03-01, 2026-03-30\n    Live: Mudanças no Melasma 2026       :milestone, 2026-02-15, 0d\n\n    section 2. OUTONO\n    Treinamento Skinretin & RedenX       :active, b1, 2026-04-01, 2026-04-20\n    Campanha Dia das Mães (Glow)         :crit, b2, 2026-04-20, 2026-05-10\n    Workshop Periocular (Argibenone)     :b3, 2026-05-15, 2026-06-15\n    Live: Futuro da Regeneração          :milestone, 2026-05-20, 0d\n    \n    section 3. INVERNO\n    Treinamento Mesopeel (Temporada)     :active, c1, 2026-07-01, 2026-07-20\n    Workshop Corporal (Bodyshock)        :c2, 2026-08-01, 2026-08-30\n    Campanha Dia dos Pais (Masc/Acne)    :c3, 2026-08-01, 2026-08-15\n    Campanha Dia do Cliente              :crit, c4, 2026-09-01, 2026-09-15\n    Live: Acne Hormonal                  :milestone, 2026-08-10, 0d\n\n    section 4. PRIMAVERA\n    Treinamento Age Element/Revitalização:active, d1, 2026-10-01, 2026-10-20\n    Campanha Black Friday                :crit, d2, 2026-11-01, 2026-11-30\n    Protocolos Pré-Festas (Flash)        :d3, 2026-12-01, 2026-12-20\n    Live: Protocolos de Natal            :milestone, 2026-11-10, 0d\n\n    section Rotinas\n    Workshops em Clínica (1/consultor)   :done, r1, 2026-01-01, 2026-12-31\n    Atualização Academy (Lançamentos)    :r2, 2026-01-01, 2026-12-31\n    Onboarding Novos (POP T-003)         :r3, 2026-01-01, 2026-12-31\n\n    section Speakers\n    Encontro Nacional Q1 (Alinhamento)   :s1, 2026-03-15, 1d\n    Encontro Nacional Q2 (Técnico)       :s2, 2026-06-15, 1d\n    Encontro Nacional Q3 (Prático)       :s3, 2026-09-15, 1d\n    Encontro Nacional Q4 (Planejamento)  :s4, 2026-12-10, 1d",
+  "sazonalidade": [
+    {
+      "estacao": "1. VERÃO (Jan - Mar)",
+      "tag": "Melasma & Pós-Sol",
+      "cor": "yellow",
+      "foco_comercial": [
+        "<strong>Produtos:</strong> Cosmelan, Dermamelan, Melan Tran3x, Mesoprotech.",
+        "<strong>Tratamentos:</strong> Protocolo Depigmentation + Glutathion, Peelings Iluminadores.",
+        "<strong>Campanhas:</strong> Janeiro Branco, Carnaval (Pós-Sol)."
+      ],
+      "acoes_treinamento": [
+        "Workshop: Acne Pós-Verão com Blemiderm.",
+        "Live: O que mudou no tratamento do melasma em 2026.",
+        "Reciclagem obrigatória de Cosmelan/Dermamelan."
+      ]
+    },
+    {
+      "estacao": "2. OUTONO (Abr - Jun)",
+      "tag": "Regeneração & Retinol",
+      "cor": "orange",
+      "foco_comercial": [
+        "<strong>Produtos:</strong> Skinretin Pro, RedenX, Age Element, DMAE.",
+        "<strong>Tratamentos:</strong> Protocolo Europeu Skinretin, Neoestimulação RedenX.",
+        "<strong>Campanhas:</strong> Fall Regeneration, Dia das Mães."
+      ],
+      "acoes_treinamento": [
+        "Workshop: Rejuvenescimento Periocular (Argibenone).",
+        "Live: O futuro da regeneração celular.",
+        "Trilha: Regeneradores (Mecanismo de ação e Pitch)."
+      ]
+    },
+    {
+      "estacao": "3. INVERNO (Jul - Set)",
+      "tag": "Peelings & Corpo",
+      "cor": "blue",
+      "foco_comercial": [
+        "<strong>Produtos:</strong> Mesopeel, Bodyshock, Mesostabyl, Blemiderm.",
+        "<strong>Tratamentos:</strong> Remodelação corporal, Acne hormonal, Peelings médios.",
+        "<strong>Campanhas:</strong> Corpo em Alta Performance, Dia dos Pais."
+      ],
+      "acoes_treinamento": [
+        "Workshop: Acne Experience e Remodelação Corporal Avançada.",
+        "Live: A temporada dos peelings e vendas.",
+        "Técnico: Reductonidasa + Mesofiller (intercorrências)."
+      ]
+    },
+    {
+      "estacao": "4. PRIMAVERA (Out - Dez)",
+      "tag": "Revitalização & Glow",
+      "cor": "pink",
+      "foco_comercial": [
+        "<strong>Produtos:</strong> Age Element Home, NCTC + X-DNA, Silício Orgânico.",
+        "<strong>Tratamentos:</strong> Glow imediato, Lifting pré-festas.",
+        "<strong>Campanhas:</strong> Black Friday, Prepare-se para o Verão, Natal."
+      ],
+      "acoes_treinamento": [
+        "Workshop: Glow de Primavera e Rejuvenescimento Pré-Festas.",
+        "Live: Montagem de protocolos pré-festas.",
+        "Foco: Vendas de kits homecare e presentes."
+      ]
+    }
+  ],
+  "riscos": [
+    {
+      "risco": "Falta de tempo comercial",
+      "impacto": "Alto",
+      "mitigacao": "Treinamentos curtos, gravados e flexíveis.",
+      "cor_impacto": "red"
+    },
+    {
+      "risco": "Baixo engajamento online",
+      "impacto": "Médio",
+      "mitigacao": "Gamificação e certificação obrigatória.",
+      "cor_impacto": "yellow"
+    },
+    {
+      "risco": "Despadronização discurso",
+      "impacto": "Alto",
+      "mitigacao": "Reciclagens e slides padronizados.",
+      "cor_impacto": "red"
+    }
+  ],
+  "kpis": [
+    "<strong>Mensal:</strong> Nº de workshops realizados (Meta: 1-2 por consultor), Taxa de conclusão Academy, Nº profissionais treinados.",
+    "<strong>Trimestral:</strong> Relatório do PAT (Planejado x Realizado), Correlação de Treinamento x Vendas por linha, Avaliação de Speakers.",
+    "<strong>Ferramentas:</strong> mesoestetic Academy (LMS), ClickUp (Gestão), CRM (Vendas).",
+    "<strong>Protocolo Lançamentos:</strong> \"Treinou → Lançou\". Ninguém vende sem certificação prévia (Zoom + Academy + Pitch)."
+  ]
+}
