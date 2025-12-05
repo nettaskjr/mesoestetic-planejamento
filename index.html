@@ -6,7 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planejamento Estratégico de Treinamento 2026 - mesoestetic Brasil</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'meso-black': '#000000',
+                        'meso-dark-gray': '#333333',
+                        'meso-gray': '#555555',
+                        'meso-blue': '#3860BE',
+                    },
+                    fontFamily: {
+                        sans: ['"Open Sans"', '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @media print {
@@ -30,6 +48,11 @@
             margin-bottom: 1.5rem;
         }
 
+        /* Dark mode overrides for custom classes */
+        .dark .section-header {
+            border-bottom-color: #374151;
+        }
+
         .card {
             transition: transform 0.2s;
         }
@@ -40,50 +63,67 @@
     </style>
 </head>
 
-<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
+<body
+    class="bg-gray-50 text-meso-dark-gray font-sans leading-relaxed dark:bg-meso-black dark:text-gray-100 transition-colors duration-300">
 
-    <header class="bg-slate-900 text-white p-6 shadow-lg sticky top-0 z-50">
+    <header
+        class="bg-white text-meso-black p-6 shadow-sm sticky top-0 z-50 dark:bg-black dark:text-white border-b border-gray-200 dark:border-gray-800">
         <div class="container mx-auto flex justify-between items-center">
-            <div>
-                <h1 class="text-2xl font-bold tracking-wide"></h1>
-                <p class="text-sm text-slate-400"></p>
+            <div style="width: 1791px; height: 80px; max-width: 100%;" class="flex flex-col items-start justify-center">
+                <img src="logo.png" alt="mesoestetic" class="dark:invert">
+                <p class="text-sm text-meso-gray dark:text-gray-400"></p>
             </div>
-            <button onclick="window.print()"
-                class="no-print bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded shadow transition">
-                <i class="fas fa-print mr-2"></i> Imprimir / PDF
-            </button>
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle"
+                    class="no-print p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition text-meso-black dark:text-gray-300"
+                    aria-label="Alternar tema">
+                    <i class="fas fa-sun dark:hidden"></i>
+                    <i class="fas fa-moon hidden dark:inline"></i>
+                </button>
+                <button onclick="window.print()"
+                    class="no-print bg-meso-black hover:bg-gray-800 text-white px-4 py-2 rounded shadow transition dark:bg-white dark:text-black dark:hover:bg-gray-200">
+                    <i class="fas fa-print mr-2"></i> Imprimir / PDF
+                </button>
+            </div>
         </div>
     </header>
 
-    <main class="container mx-auto my-8 p-8 bg-white shadow-xl rounded-lg max-w-7xl">
+    <main
+        class="container mx-auto my-8 p-8 bg-white shadow-sm rounded-none border border-gray-100 max-w-7xl dark:bg-gray-900 dark:border-gray-800 dark:shadow-none transition-colors duration-300">
 
         <section id="diagnostico" class="mb-12">
-            <h2 class="text-3xl font-bold text-slate-800 section-header"><i
-                    class="fas fa-microscope mr-2 text-blue-600"></i> 1. Diagnóstico e Identidade</h2>
+            <h2 class="text-3xl font-bold text-meso-black section-header dark:text-white"><i
+                    class="fas fa-microscope mr-2 text-meso-black dark:text-gray-300"></i> 1. Diagnóstico e Identidade
+            </h2>
 
             <div id="diagnostico-cards" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 <!-- Content loaded via JS -->
             </div>
 
-            <h3 class="text-xl font-semibold mb-4 text-slate-700">Análise SWOT</h3>
+            <h3 class="text-xl font-semibold mb-4 text-meso-dark-gray dark:text-gray-300">Análise SWOT</h3>
             <div id="swot-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <!-- Content loaded via JS -->
             </div>
         </section>
 
         <section id="objetivos" class="mb-12">
-            <h2 class="text-3xl font-bold text-slate-800 section-header"><i
-                    class="fas fa-bullseye mr-2 text-red-600"></i> 2. Objetivos Estratégicos (SMART)</h2>
+            <h2 class="text-3xl font-bold text-meso-black section-header dark:text-white"><i
+                    class="fas fa-bullseye mr-2 text-meso-black dark:text-gray-300"></i> 2. Objetivos Estratégicos
+                (SMART)
+            </h2>
             <div id="objetivos-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Content loaded via JS -->
             </div>
         </section>
 
         <section id="gantt" class="mb-12 print:break-before-page">
-            <h2 class="text-3xl font-bold text-slate-800 section-header"><i
-                    class="fas fa-calendar-alt mr-2 text-indigo-600"></i> 3. Cronograma Visual 2026</h2>
-            <div class="bg-white p-4 rounded shadow overflow-x-auto border border-gray-200">
-                <p class="text-sm text-gray-500 mb-4 italic">Renderização automática baseada no planejamento sazonal e
+            <h2 class="text-3xl font-bold text-meso-black section-header dark:text-white"><i
+                    class="fas fa-calendar-alt mr-2 text-meso-black dark:text-gray-300"></i> 3. Cronograma Visual 2026
+            </h2>
+            <div
+                class="bg-white p-4 rounded-none shadow-sm overflow-x-auto border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+                <p class="text-sm text-gray-500 mb-4 italic dark:text-gray-400">Renderização automática baseada no
+                    planejamento sazonal e
                     rotinas.</p>
                 <div class="mermaid">
                     <!-- Content loaded via JS -->
@@ -92,7 +132,8 @@
         </section>
 
         <section id="sazonalidade" class="mb-12">
-            <h2 class="text-3xl font-bold text-slate-800 section-header"><i class="fas fa-leaf mr-2 text-green-600"></i>
+            <h2 class="text-3xl font-bold text-meso-black section-header dark:text-white"><i
+                    class="fas fa-leaf mr-2 text-meso-black dark:text-gray-300"></i>
                 4. Estratégia por Estação</h2>
 
             <div id="sazonalidade-container" class="space-y-8">
@@ -103,11 +144,14 @@
         <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 print:break-inside-avoid">
 
             <div>
-                <h3 class="text-xl font-bold text-slate-800 mb-4 border-l-4 border-red-500 pl-3">Matriz de Riscos e
+                <h3
+                    class="text-xl font-bold text-meso-black mb-4 border-l-4 border-meso-black pl-3 dark:text-white dark:border-gray-500">
+                    Matriz de Riscos e
                     Mitigação</h3>
                 <div class="overflow-x-auto">
-                    <table class="min-w-full text-sm text-left text-gray-600 border border-gray-200">
-                        <thead class="bg-gray-100 uppercase">
+                    <table
+                        class="min-w-full text-sm text-left text-gray-600 border border-gray-200 dark:text-gray-300 dark:border-gray-700">
+                        <thead class="bg-gray-50 uppercase dark:bg-gray-800 dark:text-gray-200">
                             <tr>
                                 <th class="px-4 py-3">Risco</th>
                                 <th class="px-4 py-3">Impacto</th>
@@ -122,9 +166,10 @@
             </div>
 
             <div>
-                <h3 class="text-xl font-bold text-slate-800 mb-4 border-l-4 border-blue-500 pl-3">Monitoramento e KPIs
+                <h3 class="text-xl font-bold text-meso-black mb-4 border-l-4 border-meso-blue pl-3 dark:text-white">
+                    Monitoramento e KPIs
                 </h3>
-                <ul id="kpis-list" class="space-y-3 text-sm text-gray-700">
+                <ul id="kpis-list" class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
                     <!-- Content loaded via JS -->
                 </ul>
             </div>
